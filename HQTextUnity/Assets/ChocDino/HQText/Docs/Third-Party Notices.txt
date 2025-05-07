@@ -1,0 +1,21 @@
+HQText is built using the following 3rd party components:
+
+* pango (Licenses/Pango.txt)
+
+Pango is built using the following 3rd party components:
+
+* cairo (Licenses/Cairo.txt)
+* fontconfig (Licenses/fontconfig.txt)
+* fribidi
+* freetype (Licenses/FreeType.txt)
+* getttext
+* glib
+* hardbuzz
+
+Cairo is built using the following 3rd party components:
+
+* dirent (Licenses/dirent.txt)
+* libPNG (Licenses/LibPNG.txt)
+* pixman (Licenses/pixman.txt)
+* pthreads ()
+* zlib (Licenses/zlib.txt)

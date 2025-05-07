@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0E72BCC9-1795-3173-B1E4-2E41A4373DE2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>libHQText</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Andrew\proj\HQ-Text\_Native\src\build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libHQText.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libHQText</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Andrew\proj\HQ-Text\_Native\src\build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libHQText.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libHQText</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Andrew\proj\HQ-Text\_Native\src\build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libHQText.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libHQText</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Andrew\proj\HQ-Text\_Native\src\build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libHQText.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libHQText</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>c:\andrew\tools\code\vcpkg\packages\pango_x64-windows-static\include\pango-1.0;c:\andrew\tools\code\vcpkg\packages\glib_x64-windows-static\include\glib-2.0;c:\andrew\tools\code\vcpkg\packages\glib_x64-windows-static\lib\glib-2.0\include;c:\andrew\tools\code\vcpkg\packages\harfbuzz_x64-windows-static\include\harfbuzz;c:\andrew\tools\code\vcpkg\packages\cairo_x64-windows-static\include\cairo;c:\andrew\tools\code\vcpkg\packages\fontconfig_x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug";libHQText_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";libHQText_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>c:\andrew\tools\code\vcpkg\packages\pango_x64-windows-static\include\pango-1.0;c:\andrew\tools\code\vcpkg\packages\glib_x64-windows-static\include\glib-2.0;c:\andrew\tools\code\vcpkg\packages\glib_x64-windows-static\lib\glib-2.0\include;c:\andrew\tools\code\vcpkg\packages\harfbuzz_x64-windows-static\include\harfbuzz;c:\andrew\tools\code\vcpkg\packages\cairo_x64-windows-static\include\cairo;c:\andrew\tools\code\vcpkg\packages\fontconfig_x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>c:\andrew\tools\code\vcpkg\packages\pango_x64-windows-static\include\pango-1.0;c:\andrew\tools\code\vcpkg\packages\glib_x64-windows-static\include\glib-2.0;c:\andrew\tools\code\vcpkg\packages\glib_x64-windows-static\lib\glib-2.0\include;c:\andrew\tools\code\vcpkg\packages\harfbuzz_x64-windows-static\include\harfbuzz;c:\andrew\tools\code\vcpkg\packages\cairo_x64-windows-static\include\cairo;c:\andrew\tools\code\vcpkg\packages\fontconfig_x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>brotlicommon.lib;brotlidec.lib;brotlienc.lib;bz2d.lib;cairo.lib;cairo-gobject.lib;cairo-script-interpreter.lib;charset.lib;ffi.lib;fontconfig.lib;freetyped.lib;fribidi.lib;getopt.lib;gio-2.0.lib;glib-2.0.lib;gmodule-2.0.lib;gobject-2.0.lib;gthread-2.0.lib;harfbuzz.lib;harfbuzz-subset.lib;iconv.lib;intl.lib;libexpatdMT.lib;libpng16d.lib;pango-1.0.lib;pangocairo-1.0.lib;pangoft2-1.0.lib;pangowin32-1.0.lib;pcre2-8d.lib;pcre2-16d.lib;pcre2-32d.lib;pcre2-posixd.lib;pixman-1.lib;pthreadVC3d.lib;pthreadVCE3d.lib;pthreadVSE3d.lib;zlibd.lib;Ws2_32.lib;Dwrite.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>c:/andrew/tools/code/vcpkg/installed/x64-windows-static/debug/lib;c:/andrew/tools/code/vcpkg/installed/x64-windows-static/debug/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DelayLoadDLLs>dwrite.dll;ws2_32.dll</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Andrew/proj/HQ-Text/_Native/src/Debug/libHQText.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Andrew/proj/HQ-Text/_Native/src/build/bin/Debug/libHQText.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>c:\andrew\tools\code\vcpkg\packages\pango_x64-windows-static\include\pango-1.0;c:\andrew\tools\code\vcpkg\packages\glib_x64-windows-static\include\glib-2.0;c:\andrew\tools\code\vcpkg\packages\glib_x64-windows-static\lib\glib-2.0\include;c:\andrew\tools\code\vcpkg\packages\harfbuzz_x64-windows-static\include\harfbuzz;c:\andrew\tools\code\vcpkg\packages\cairo_x64-windows-static\include\cairo;c:\andrew\tools\code\vcpkg\packages\fontconfig_x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";libHQText_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";libHQText_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>c:\andrew\tools\code\vcpkg\packages\pango_x64-windows-static\include\pango-1.0;c:\andrew\tools\code\vcpkg\packages\glib_x64-windows-static\include\glib-2.0;c:\andrew\tools\code\vcpkg\packages\glib_x64-windows-static\lib\glib-2.0\include;c:\andrew\tools\code\vcpkg\packages\harfbuzz_x64-windows-static\include\harfbuzz;c:\andrew\tools\code\vcpkg\packages\cairo_x64-windows-static\include\cairo;c:\andrew\tools\code\vcpkg\packages\fontconfig_x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>c:\andrew\tools\code\vcpkg\packages\pango_x64-windows-static\include\pango-1.0;c:\andrew\tools\code\vcpkg\packages\glib_x64-windows-static\include\glib-2.0;c:\andrew\tools\code\vcpkg\packages\glib_x64-windows-static\lib\glib-2.0\include;c:\andrew\tools\code\vcpkg\packages\harfbuzz_x64-windows-static\include\harfbuzz;c:\andrew\tools\code\vcpkg\packages\cairo_x64-windows-static\include\cairo;c:\andrew\tools\code\vcpkg\packages\fontconfig_x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>brotlicommon.lib;brotlidec.lib;brotlienc.lib;bz2.lib;cairo.lib;cairo-gobject.lib;cairo-script-interpreter.lib;charset.lib;ffi.lib;fontconfig.lib;freetype.lib;fribidi.lib;getopt.lib;gio-2.0.lib;glib-2.0.lib;gmodule-2.0.lib;gobject-2.0.lib;gthread-2.0.lib;harfbuzz.lib;harfbuzz-subset.lib;iconv.lib;intl.lib;libexpatMT.lib;libpng16.lib;pango-1.0.lib;pangocairo-1.0.lib;pangoft2-1.0.lib;pangowin32-1.0.lib;pcre2-8.lib;pcre2-16.lib;pcre2-32.lib;pcre2-posix.lib;pixman-1.lib;pthreadVC3.lib;pthreadVCE3.lib;pthreadVSE3.lib;zlib.lib;Ws2_32.lib;Dwrite.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>c:/andrew/tools/code/vcpkg/installed/x64-windows-static/lib;c:/andrew/tools/code/vcpkg/installed/x64-windows-static/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DelayLoadDLLs>dwrite.dll;ws2_32.dll</DelayLoadDLLs>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Andrew/proj/HQ-Text/_Native/src/Release/libHQText.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Andrew/proj/HQ-Text/_Native/src/build/bin/Release/libHQText.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>c:\andrew\tools\code\vcpkg\packages\pango_x64-windows-static\include\pango-1.0;c:\andrew\tools\code\vcpkg\packages\glib_x64-windows-static\include\glib-2.0;c:\andrew\tools\code\vcpkg\packages\glib_x64-windows-static\lib\glib-2.0\include;c:\andrew\tools\code\vcpkg\packages\harfbuzz_x64-windows-static\include\harfbuzz;c:\andrew\tools\code\vcpkg\packages\cairo_x64-windows-static\include\cairo;c:\andrew\tools\code\vcpkg\packages\fontconfig_x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";libHQText_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";libHQText_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>c:\andrew\tools\code\vcpkg\packages\pango_x64-windows-static\include\pango-1.0;c:\andrew\tools\code\vcpkg\packages\glib_x64-windows-static\include\glib-2.0;c:\andrew\tools\code\vcpkg\packages\glib_x64-windows-static\lib\glib-2.0\include;c:\andrew\tools\code\vcpkg\packages\harfbuzz_x64-windows-static\include\harfbuzz;c:\andrew\tools\code\vcpkg\packages\cairo_x64-windows-static\include\cairo;c:\andrew\tools\code\vcpkg\packages\fontconfig_x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>c:\andrew\tools\code\vcpkg\packages\pango_x64-windows-static\include\pango-1.0;c:\andrew\tools\code\vcpkg\packages\glib_x64-windows-static\include\glib-2.0;c:\andrew\tools\code\vcpkg\packages\glib_x64-windows-static\lib\glib-2.0\include;c:\andrew\tools\code\vcpkg\packages\harfbuzz_x64-windows-static\include\harfbuzz;c:\andrew\tools\code\vcpkg\packages\cairo_x64-windows-static\include\cairo;c:\andrew\tools\code\vcpkg\packages\fontconfig_x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>brotlicommon.lib;brotlidec.lib;brotlienc.lib;bz2.lib;cairo.lib;cairo-gobject.lib;cairo-script-interpreter.lib;charset.lib;ffi.lib;fontconfig.lib;freetype.lib;fribidi.lib;getopt.lib;gio-2.0.lib;glib-2.0.lib;gmodule-2.0.lib;gobject-2.0.lib;gthread-2.0.lib;harfbuzz.lib;harfbuzz-subset.lib;iconv.lib;intl.lib;libexpatMT.lib;libpng16.lib;pango-1.0.lib;pangocairo-1.0.lib;pangoft2-1.0.lib;pangowin32-1.0.lib;pcre2-8.lib;pcre2-16.lib;pcre2-32.lib;pcre2-posix.lib;pixman-1.lib;pthreadVC3.lib;pthreadVCE3.lib;pthreadVSE3.lib;zlib.lib;Ws2_32.lib;Dwrite.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>c:/andrew/tools/code/vcpkg/installed/x64-windows-static/lib;c:/andrew/tools/code/vcpkg/installed/x64-windows-static/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DelayLoadDLLs>dwrite.dll;ws2_32.dll</DelayLoadDLLs>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Andrew/proj/HQ-Text/_Native/src/MinSizeRel/libHQText.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Andrew/proj/HQ-Text/_Native/src/build/bin/MinSizeRel/libHQText.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>c:\andrew\tools\code\vcpkg\packages\pango_x64-windows-static\include\pango-1.0;c:\andrew\tools\code\vcpkg\packages\glib_x64-windows-static\include\glib-2.0;c:\andrew\tools\code\vcpkg\packages\glib_x64-windows-static\lib\glib-2.0\include;c:\andrew\tools\code\vcpkg\packages\harfbuzz_x64-windows-static\include\harfbuzz;c:\andrew\tools\code\vcpkg\packages\cairo_x64-windows-static\include\cairo;c:\andrew\tools\code\vcpkg\packages\fontconfig_x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";libHQText_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";libHQText_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>c:\andrew\tools\code\vcpkg\packages\pango_x64-windows-static\include\pango-1.0;c:\andrew\tools\code\vcpkg\packages\glib_x64-windows-static\include\glib-2.0;c:\andrew\tools\code\vcpkg\packages\glib_x64-windows-static\lib\glib-2.0\include;c:\andrew\tools\code\vcpkg\packages\harfbuzz_x64-windows-static\include\harfbuzz;c:\andrew\tools\code\vcpkg\packages\cairo_x64-windows-static\include\cairo;c:\andrew\tools\code\vcpkg\packages\fontconfig_x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>c:\andrew\tools\code\vcpkg\packages\pango_x64-windows-static\include\pango-1.0;c:\andrew\tools\code\vcpkg\packages\glib_x64-windows-static\include\glib-2.0;c:\andrew\tools\code\vcpkg\packages\glib_x64-windows-static\lib\glib-2.0\include;c:\andrew\tools\code\vcpkg\packages\harfbuzz_x64-windows-static\include\harfbuzz;c:\andrew\tools\code\vcpkg\packages\cairo_x64-windows-static\include\cairo;c:\andrew\tools\code\vcpkg\packages\fontconfig_x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>brotlicommon.lib;brotlidec.lib;brotlienc.lib;bz2.lib;cairo.lib;cairo-gobject.lib;cairo-script-interpreter.lib;charset.lib;ffi.lib;fontconfig.lib;freetype.lib;fribidi.lib;getopt.lib;gio-2.0.lib;glib-2.0.lib;gmodule-2.0.lib;gobject-2.0.lib;gthread-2.0.lib;harfbuzz.lib;harfbuzz-subset.lib;iconv.lib;intl.lib;libexpatMT.lib;libpng16.lib;pango-1.0.lib;pangocairo-1.0.lib;pangoft2-1.0.lib;pangowin32-1.0.lib;pcre2-8.lib;pcre2-16.lib;pcre2-32.lib;pcre2-posix.lib;pixman-1.lib;pthreadVC3.lib;pthreadVCE3.lib;pthreadVSE3.lib;zlib.lib;Ws2_32.lib;Dwrite.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>c:/andrew/tools/code/vcpkg/installed/x64-windows-static/lib;c:/andrew/tools/code/vcpkg/installed/x64-windows-static/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DelayLoadDLLs>dwrite.dll;ws2_32.dll</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Andrew/proj/HQ-Text/_Native/src/RelWithDebInfo/libHQText.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Andrew/proj/HQ-Text/_Native/src/build/bin/RelWithDebInfo/libHQText.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Andrew\proj\HQ-Text\_Native\src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Andrew/proj/HQ-Text/_Native/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Andrew/proj/HQ-Text/_Native/src -BC:/Andrew/proj/HQ-Text/_Native/src --check-stamp-file C:/Andrew/proj/HQ-Text/_Native/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Andrew\proj\HQ-Text\_Native\src\CMakeFiles\3.30.3\CMakeCCompiler.cmake;C:\Andrew\proj\HQ-Text\_Native\src\CMakeFiles\3.30.3\CMakeCXXCompiler.cmake;C:\Andrew\proj\HQ-Text\_Native\src\CMakeFiles\3.30.3\CMakeRCCompiler.cmake;C:\Andrew\proj\HQ-Text\_Native\src\CMakeFiles\3.30.3\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Andrew\proj\HQ-Text\_Native\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Andrew/proj/HQ-Text/_Native/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Andrew/proj/HQ-Text/_Native/src -BC:/Andrew/proj/HQ-Text/_Native/src --check-stamp-file C:/Andrew/proj/HQ-Text/_Native/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Andrew\proj\HQ-Text\_Native\src\CMakeFiles\3.30.3\CMakeCCompiler.cmake;C:\Andrew\proj\HQ-Text\_Native\src\CMakeFiles\3.30.3\CMakeCXXCompiler.cmake;C:\Andrew\proj\HQ-Text\_Native\src\CMakeFiles\3.30.3\CMakeRCCompiler.cmake;C:\Andrew\proj\HQ-Text\_Native\src\CMakeFiles\3.30.3\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Andrew\proj\HQ-Text\_Native\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Andrew/proj/HQ-Text/_Native/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Andrew/proj/HQ-Text/_Native/src -BC:/Andrew/proj/HQ-Text/_Native/src --check-stamp-file C:/Andrew/proj/HQ-Text/_Native/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Andrew\proj\HQ-Text\_Native\src\CMakeFiles\3.30.3\CMakeCCompiler.cmake;C:\Andrew\proj\HQ-Text\_Native\src\CMakeFiles\3.30.3\CMakeCXXCompiler.cmake;C:\Andrew\proj\HQ-Text\_Native\src\CMakeFiles\3.30.3\CMakeRCCompiler.cmake;C:\Andrew\proj\HQ-Text\_Native\src\CMakeFiles\3.30.3\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Andrew\proj\HQ-Text\_Native\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Andrew/proj/HQ-Text/_Native/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Andrew/proj/HQ-Text/_Native/src -BC:/Andrew/proj/HQ-Text/_Native/src --check-stamp-file C:/Andrew/proj/HQ-Text/_Native/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Andrew\proj\HQ-Text\_Native\src\CMakeFiles\3.30.3\CMakeCCompiler.cmake;C:\Andrew\proj\HQ-Text\_Native\src\CMakeFiles\3.30.3\CMakeCXXCompiler.cmake;C:\Andrew\proj\HQ-Text\_Native\src\CMakeFiles\3.30.3\CMakeRCCompiler.cmake;C:\Andrew\proj\HQ-Text\_Native\src\CMakeFiles\3.30.3\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Andrew\proj\HQ-Text\_Native\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Andrew\proj\HQ-Text\_Native\src\TextInfo.h" />
+    <ClInclude Include="C:\Andrew\proj\HQ-Text\_Native\src\VerticalAlignment.h" />
+    <ClInclude Include="C:\Andrew\proj\HQ-Text\_Native\src\Color.h" />
+    <ClInclude Include="C:\Andrew\proj\HQ-Text\_Native\src\Color16.h" />
+    <ClInclude Include="C:\Andrew\proj\HQ-Text\_Native\src\TextSize.h" />
+    <ClInclude Include="C:\Andrew\proj\HQ-Text\_Native\src\RenderData.h" />
+    <ClInclude Include="C:\Andrew\proj\HQ-Text\_Native\src\Unity\IUnityInterface.h" />
+    <ClInclude Include="C:\Andrew\proj\HQ-Text\_Native\src\Unity\IUnityGraphics.h" />
+    <ClInclude Include="C:\Andrew\proj\HQ-Text\_Native\src\Unity\IUnityRenderingExtensions.h" />
+    <ClInclude Include="C:\Andrew\proj\HQ-Text\_Native\src\HorizontalWrapping.h" />
+    <ClInclude Include="C:\Andrew\proj\HQ-Text\_Native\src\VerticalWrapping.h" />
+    <ClCompile Include="C:\Andrew\proj\HQ-Text\_Native\src\FontConfig.cpp" />
+    <ClInclude Include="C:\Andrew\proj\HQ-Text\_Native\src\FontConfig.h" />
+    <ClCompile Include="C:\Andrew\proj\HQ-Text\_Native\src\Renderer.cpp" />
+    <ClInclude Include="C:\Andrew\proj\HQ-Text\_Native\src\Renderer.h" />
+    <ClCompile Include="C:\Andrew\proj\HQ-Text\_Native\src\Plugin.cpp" />
+    <ClInclude Include="C:\Andrew\proj\HQ-Text\_Native\src\Plugin.h" />
+    <ClInclude Include="DefaultFontConfig.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Andrew\proj\HQ-Text\_Native\src\ZERO_CHECK.vcxproj">
+      <Project>{CB47C04D-045B-3596-BB5B-18B7873D5EC6}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
