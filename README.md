@@ -26,9 +26,8 @@ While TextMeshPro is another option for supporting Arabic, it often experiences 
 - 64-Bit Windows only (Windows 10 & 11)
 - (other platform support on request)
 
-## Links
-- [Download](https://github.com/Chocolate-Dinosaur/HQText/releases)
-- [Visit the website](https://www.chocdino.com/products/hqtext/about/) for more information.
+## Dependencies
+This work is made possible by [Pango](https://docs.gtk.org/Pango/), licensed under LGPL-2.1-or-later. Authors:  Owen Taylor, Behdad Esfahbod.
 
 ## Contributors
 
@@ -42,8 +41,13 @@ While TextMeshPro is another option for supporting Arabic, it often experiences 
 ### Additional Contributors
 - Dr. Mustapha Saidi, for creating the Arabic text references.
 
-## Dependencies
-This work is made possible by [Pango](https://docs.gtk.org/Pango/), licensed under LGPL-2.1-or-later. Authors:  Owen Taylor, Behdad Esfahbod.
+## Links
+- [Download the Unity plugin](https://github.com/Chocolate-Dinosaur/HQText/releases)
+- [Visit the website](https://www.chocdino.com/products/hqtext/about/) for more information.
+
+## Building
+
+See [BUILD.md](BUILD.md) for build instructions.
 
 ## Support & Requests
-Contact [Chocolate Dinosaur Ltd](https://www.chocdino.com/contact/) fore more information
+Contact [Chocolate Dinosaur Ltd](https://www.chocdino.com/contact/) for more information.
