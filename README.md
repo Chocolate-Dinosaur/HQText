@@ -9,6 +9,8 @@ To achieve this, HQText employs a user-friendly and intuitive wrapper for Pango,
 
 While TextMeshPro is another option for supporting Arabic, it often experiences issues with diacritic placement, which can vary between fonts, and transparency artifacts arising from overlapping character ligatures. For those who find these problems unacceptable, HQText serves as an ideal alternative.
 
+[Download the Unity plugin.](https://github.com/Chocolate-Dinosaur/HQText/releases)
+
 ## Features
 - Accurate rendering of complex text
 - Supports TTF and OTF fonts
