@@ -13,10 +13,10 @@ While TextMeshPro is another option for supporting Arabic, it often experiences 
 
 ## Features
 - Accurate rendering of complex text
-- Supports TTF and OTF fonts
 - Arabic, Persian/Farsi, Hebrew, Urdu and more
 - Correct rendering of diacritics and ligatures
 - Markup (Rich text) support
+- Supports TTF and OTF fonts
 - Supports ALL the render-pipelines: Built-in/URP/HDRP
 - Also works in editor (no need to enter play mode)
 - Supports visual effects via [UIFX](https://www.chocdino.com/products/uifx/bundle/about/)
