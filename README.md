@@ -9,8 +9,7 @@ To achieve this, HQText employs a user-friendly and intuitive wrapper for Pango,
 
 While TextMeshPro is another option for supporting Arabic, it often experiences issues with diacritic placement, which can vary between fonts, and transparency artifacts arising from overlapping character ligatures. For those who find these problems unacceptable, HQText serves as an ideal alternative.
 
-Features
-
+## Features
 - Accurate rendering of complex text
 - Supports TTF and OTF fonts
 - Arabic, Persian/Farsi, Hebrew, Urdu and more
@@ -18,16 +17,33 @@ Features
 - Markup (Rich text) support
 - Supports ALL the render-pipelines: Built-in/URP/HDRP
 - Also works in editor (no need to enter play mode)
-- Supports visual effects via UIFX
+- Supports visual effects via [UIFX](https://www.chocdino.com/products/uifx/bundle/about/)
 - Includes full C# and C++ source code
 
-Requirements
-
+## Requirements
 - Supports all Unity versions from 2019.4.0 up to Unity 6.x
 - Supports all render pipelines: Built-in, URP and HDRP
 - 64-Bit Windows only (Windows 10 & 11)
+- (other platform support on request)
 
-Links
-
-- [Download the Trial Version](https://github.com/Chocolate-Dinosaur/HQText/releases)
+## Links
+- [Download](https://github.com/Chocolate-Dinosaur/HQText/releases)
 - [Visit the website](https://www.chocdino.com/products/hqtext/about/) for more information.
+
+## Contributors
+
+### Authors / Maintainers
+- Shane Marks
+- [Chocolate Dinosaur Ltd](https://www.chocdino.com/products/hqtext/about/)
+
+### Contributors
+- Kelly McCarter, Denzil Büchner, Ruan Moolman, Calvin Lichungu, Andrew Griffiths
+
+### Additional Contributors
+- Dr. Mustapha Saidi, for creating the Arabic text references.
+
+## Dependencies
+This work is made possible by [Pango](https://docs.gtk.org/Pango/), licensed under LGPL-2.1-or-later. Authors:  Owen Taylor, Behdad Esfahbod.
+
+## Support & Requests
+Contact [Chocolate Dinosaur Ltd](https://www.chocdino.com/contact/) fore more information
